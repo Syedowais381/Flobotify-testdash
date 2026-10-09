@@ -1,0 +1,77 @@
+.dashboard-header {
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-primary);
+  z-index: 10;
+  padding-top: 2rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 2rem 1.5rem 2rem;
+}
+
+.header-title-area h1 {
+  letter-spacing: -0.02em;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background-color: var(--bg-card);
+  color: var(--text-secondary);
+  transition: all 0.2s;
+}
+
+.theme-toggle:hover {
+  color: var(--text-primary);
+  border-color: var(--text-secondary);
+}
+
+.ai-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, rgba(77, 154, 255, 0.1), rgba(25, 214, 160, 0.1));
+  border: 1px solid rgba(77, 154, 255, 0.3);
+  color: var(--text-primary);
+  padding: 0.625rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.ai-button:hover {
+  background: linear-gradient(135deg, rgba(77, 154, 255, 0.15), rgba(25, 214, 160, 0.15));
+  border-color: rgba(77, 154, 255, 0.5);
+  box-shadow: 0 0 15px rgba(77, 154, 255, 0.1);
+}
+
+.header-divider {
+  height: 1px;
+  background-color: var(--border);
+  margin: 0 2rem;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spin-animation {
+  animation: spin 1s linear infinite;
+}
